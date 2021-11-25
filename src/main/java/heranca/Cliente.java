@@ -1,18 +1,10 @@
 package heranca;
 
-import java.math.BigDecimal;
-
-public class Gerente extends Funcionario implements Autenticavel {
-
-
-    @Override
-    public BigDecimal getBonificacao(){
-        return super.getSalario();
-    }
+public class Cliente implements Autenticavel{
 
     AutenticacaoUtil au;
 
-    public Gerente(){
+    public Cliente(){
         this.au = new AutenticacaoUtil();
     }
 

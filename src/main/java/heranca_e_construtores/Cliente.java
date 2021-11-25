@@ -1,36 +1,26 @@
-package heranca;
+package heranca_e_construtores;
 
-import java.math.BigDecimal;
-
-public abstract class Funcionario {
-
+public class Cliente {
     private String nome;
     private String cpf;
-    private BigDecimal salario;
-
-    public abstract BigDecimal getBonificacao();
+    private String profissao;
 
     public String getNome() {
         return nome;
     }
-
     public void setNome(String nome) {
         this.nome = nome;
     }
-
     public String getCpf() {
         return cpf;
     }
-
     public void setCpf(String cpf) {
         this.cpf = cpf;
     }
-
-    public BigDecimal getSalario() {
-        return salario;
+    public String getProfissao() {
+        return profissao;
     }
-
-    public void setSalario(BigDecimal salario) {
-        this.salario = salario;
+    public void setProfissao(String profissao) {
+        this.profissao = profissao;
     }
 }
